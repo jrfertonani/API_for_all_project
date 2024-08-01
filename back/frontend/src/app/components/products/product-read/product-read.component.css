@@ -1,0 +1,26 @@
+
+.conteiner{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.table{
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+button{
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-right: 20px;
+}
+
+a{
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}

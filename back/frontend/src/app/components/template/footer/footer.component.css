@@ -1,0 +1,12 @@
+
+
+
+footer.footer {
+  position: fixed; /* Fixar o footer na parte inferior */
+  bottom: 0;       /* Posicionar na parte inferior */
+  width: 100%;      /* Ocupar toda a largura da tela */
+  background-color: #333; /* Cor de fundo */
+  color: #fff; /* Cor da fonte */
+  padding: 3px; /* Espaçamento interno */
+
+}

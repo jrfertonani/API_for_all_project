@@ -1,0 +1,29 @@
+
+
+<div class="conteiner">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of sliceProducts(currentPage, itemsPerPage)">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price | currency:'BRL'}}</td>
+        <td>
+          <a  href="products/update/{{product.id}}" class="btn btn-outline-secondary"  >Edit</a>
+          <a  href="products/delete/{{product.id}}" class="btn btn-outline-secondary"  >Excluir</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<button class="btn btn-outline-secondary" (click)="currentPage = currentPage - 1; sliceProducts(currentPage, itemsPerPage)" [disabled]="currentPage === 1">Previous</button>
+<button class="btn btn-outline-secondary" (click)="currentPage = currentPage + 1; sliceProducts(currentPage, itemsPerPage)" [disabled]="currentPage === totalPages">Next</button>

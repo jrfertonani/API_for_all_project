@@ -1,0 +1,23 @@
+<div class="title"><h3>Novo Produto</h3></div>
+<div class="card">
+  <form>
+    <input
+      class="form-control"
+      placeholder="Nome"
+      [(ngModel)]="product.name"
+      name="Nome"
+    />
+
+    <input
+      class="form-control"
+      placeholder="Preço (R$)"
+      [(ngModel)]="product.price"
+      name="Price"
+    />
+  </form>
+</div>
+<button type="button" class="btn btn-outline-secondary" (click)="createProduct()">
+  Salvar
+</button>
+
+<button type="button" class="btn btn-outline-secondary" (click)="cancel()">Cancelar</button>
